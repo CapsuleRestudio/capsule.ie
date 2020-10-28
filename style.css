@@ -1,0 +1,92 @@
+body{
+    background: url(images/bg.jpg) no-repeat 50% 50%, rgba(255, 100, 0, 50);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 25px;
+    font-family:Century Gothic;
+}
+.upstage{
+    height: 110px;
+    background: black;
+    margin: 0 auto;
+    box-shadow: 0px 0px 40px -2px rgba(0,0,0,50);
+    
+}
+.logo{
+    background: black;
+    height: 100px;
+    width: 100px;
+}
+div.textyou{
+    height: 40px;
+    background-color: black;
+    border-radius: 0 0 10px 10px;
+    width: 350px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0px 0px 40px -2px rgba(0,0,0,50);
+}
+.button {
+  padding: 16px 42px;
+  box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+  line-height: 1.25;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  position: relative;
+  transition: background-color .6s ease;
+  overflow: hidden;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    transform-style: flat;
+    transform: translate3d(-50%,-50%,0);
+    background: rgba(white,.1);
+    border-radius: 100%;
+    transition: width .3s ease, height .3s ease;
+  }
+  &:focus,
+  &:hover {
+      background: darken(#FC6E51,7%);
+  }
+  &:active {
+    &:after {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+.content{
+    width: auto;
+    height: 190px;
+    padding:  100px 100px;
+}
+.none{
+    height: 30px;
+}
+.anothercontent{
+    width: auto;
+    height: 350px;
+    background-color: orangered;
+    border-radius: 25px 25px 0px 0px;
+    padding: 50px;
+    box-shadow: 0px 0px 40px -2px rgba(255,75,0,50);
+}
+.endofpage{
+    width: auto;
+    height: auto;
+    padding: 225px 10px 10px;
+}
+.nothing{
+    text-align: center;
+}
